@@ -7,6 +7,7 @@
     rectangle
     jetbrains.rider
     raycast
+    stats
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
    ];
 
@@ -61,6 +62,9 @@
     enableCompletion = true;
     oh-my-zsh = {
       enable = true;
+    };
+    shellAliases = {
+        lg = "lazygit";
     };
   };
 
