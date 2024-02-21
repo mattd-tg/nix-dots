@@ -6,7 +6,7 @@
     sl
     rectangle
     jetbrains.rider
-    raycast
+    infisical
     stats
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
    ];
@@ -15,6 +15,11 @@
     enable = true;
     userEmail = "mattdemichele@gmail.com";
     userName = "mrrobot";
+    extraConfig = {
+      push = {
+        autoSetupRemote = true; 
+      };
+    };
   };
 
   programs.lazygit.enable = true;
